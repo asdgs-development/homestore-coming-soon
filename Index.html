@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HomeStore.lk — Coming Soon</title>
+  <meta name="description" content="HomeStore.lk is launching soon. Luxury for every home." />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      background: 
+        linear-gradient(
+          rgba(255,255,255,0.88),
+          rgba(255,255,255,0.88)
+        ),
+        url("background.png") center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 720px;
+      padding: 48px;
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(6px);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+      text-align: left;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      font-weight: 500;
+      color: #333;
+      letter-spacing: 0.4px;
+    }
+
+    .tagline {
+      margin-top: 6px;
+      font-style: italic;
+      color: #777;
+      font-size: 20px;
+    }
+
+    .message {
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .buttons {
+      margin-top: 28px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .facebook {
+      background: #1877F2;
+      color: white;
+    }
+
+    .email {
+      border: 1px solid #ccc;
+      color: #444;
+      background: white;
+    }
+
+    .footer {
+      margin-top: 22px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 32px;
+        margin: 16px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>homestore.lk</h1>
+    <div class="tagline">Luxury for every home</div>
+
+    <div class="message">
+      We’re working on something beautiful for Sri Lankan homes.  
+      Our website will be launching soon.
+      <br><br>
+      Until then, follow us on Facebook for updates, new collections, and launch announcements.
+    </div>
+
+    <div class="buttons">
+      <a class="btn facebook" href="https://facebook.com/YOURPAGE" target="_blank">
+        Visit our Facebook Page
+      </a>
+      <a class="btn email" href="mailto:hello@homestore.lk">
+        Email us
+      </a>
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> HomeStore.lk
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
